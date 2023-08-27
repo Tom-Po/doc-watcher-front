@@ -4,9 +4,9 @@ import './App.css';
 import { AgendaCard, DoctorCard, MotiveCard } from './cards';
 import { ProfileType } from './cards/DoctorCard';
 import { AgendaType, MotiveType } from './cards/types';
-import { DateField } from './DateField';
 import { DevInfos } from './DevInfos';
-import { SearchForm } from './SearchFrom';
+import { DateField } from './forms/DateField';
+import { SearchForm } from './forms/SearchFrom';
 
 const bookingInfosDefault = {
   practice: '',
