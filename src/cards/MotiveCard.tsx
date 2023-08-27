@@ -1,18 +1,5 @@
-export interface MotiveType {
-  id: string;
-  name: string;
-  visit_motive_category_id: number;
-  organization_id: number;
-  speciality_id: number;
-  ref_visit_motive_id: number;
-  position: number;
-  telehealth: boolean;
-  vaccination_motive: boolean;
-  vaccination_days_range: number;
-  new_patient_restrictions: any[];
-  age_referral_restrictions: any[];
-  configurations: null;
-}
+import { MotiveType } from './types';
+
 export function MotiveCard(props: { callback: any; motive: MotiveType; selected: boolean }) {
   const { callback, selected, motive } = props;
   return (

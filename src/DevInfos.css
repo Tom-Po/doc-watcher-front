@@ -1,0 +1,22 @@
+.dev-infos {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(39, 39, 39);
+  z-index: 1000;
+  min-height: 200px;
+  max-width: 500px;
+  color: white;
+  padding: .5rem 1rem;
+  transform: translateY(80%);
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev-infos.show {
+  transform: translate(0);
+}

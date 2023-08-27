@@ -1,21 +1,4 @@
-export interface AgendaType {
-  id: string;
-  booking_disabled: boolean;
-  booking_temporary_disabled: boolean;
-  landline_number: null;
-  anonymous: boolean;
-  hide_practitioner: boolean;
-  organization_id: number;
-  visit_motive_ids_by_practice_id: string[];
-  visit_motive_ids: any[];
-  visit_motive_ids_only_for_doctors: null;
-  practice_id: number;
-  speciality_id: number;
-  practitioner_id: number;
-  patient_base_id: number;
-  insurance_sector_enabled: boolean;
-  equipment_agendas_required: boolean;
-}
+import { AgendaType } from './types';
 
 export function AgendaCard(props: { agenda: AgendaType; selected: boolean; callback: any }) {
   const { agenda, selected, callback } = props;
